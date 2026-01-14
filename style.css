@@ -19,6 +19,7 @@
 /* coloe section end */
 
 .homebar,
+.quick-list-container,
 .homebar img {
     max-width: 1620px;
     margin: 0 auto;
@@ -27,7 +28,7 @@
 .btn {
     outline: none;
     border: none;
-    background-color: #FF900E;
+    background-color: var(--one-color);
     padding: 20px 25px;
     font-size: 1.25rem;
     font-weight: 600;
@@ -36,7 +37,6 @@
 }
 
 /* shear code end */
-/* main code start */
 body {
     font-family: "Work Sans", sans-serif;
 }
@@ -65,11 +65,20 @@ nav {
     font-weight: bold;
 }
 
+.bar ul li {
+    margin-left: 77px;
+}
+
+.bar li a {
+    text-decoration: none;
+    color: var(--four-text);
+}
+
 .bar ul {
     display: flex;
     list-style: none;
     align-items: center;
-    gap: 77px;
+
     font-size: 1.125rem;
     color: var(--four-text);
     font-weight: 500;
@@ -107,7 +116,7 @@ nav {
 
 /* Header section code end */
 
-/* main code end */
+
 
 /* responsive design start*/
 
@@ -135,3 +144,74 @@ nav {
 /* navigation bar and hero banner section responsive code end */
 
 /* responsive design end */
+
+
+/* main code start */
+
+/* Quick list section design start */
+.quick-list-container {
+    margin-top: 85px;
+}
+
+.quick-list img {
+    max-width: 100%;
+}
+
+.quick-list-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.quick-list {
+    display: flex;
+    align-items: center;
+    gap: 130px;
+}
+
+.quick-list .quick-list-text h4 {
+    font-size: 2.81rem;
+    font-weight: 500;
+    color: var(--three-text);
+    margin-bottom: 24px;
+}
+
+.quick-list .quick-list-text h4 .bold-span {
+    font-weight: bold;
+    color: var(--five-text);
+}
+
+.quick-list .quick-list-text h4 .color-span {
+    font-weight: bold;
+    color: var(--one-color);
+}
+
+.quick-list-text p {
+    line-height: 24px;
+    color: var(--three-text);
+    max-width: 537px;
+    margin-bottom: 32px;
+}
+
+/* Quick list section design end */
+
+/* responsive design start*/
+
+/* quick list section responsive code start */
+@media screen and (max-width:898px) {
+    .quick-list {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:532px) {
+    .quick-list-img {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+}
+
+/* quick list section responsive code end */
+/* main code end */
