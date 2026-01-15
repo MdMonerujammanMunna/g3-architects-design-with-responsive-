@@ -20,8 +20,9 @@
 
 .homebar,
 .quick-list-container,
-.homebar img {
-    max-width: 1620px;
+.homebar img,
+.features-container {
+    max-width: 1420px;
     margin: 0 auto;
 }
 
@@ -190,14 +191,13 @@ nav {
 .quick-list-text p {
     line-height: 24px;
     color: var(--three-text);
-    max-width: 537px;
+    max-width: 587px;
     margin-bottom: 32px;
 }
 
 /* Quick list section design end */
 
 /* responsive design start*/
-
 /* quick list section responsive code start */
 @media screen and (max-width:898px) {
     .quick-list {
@@ -215,3 +215,46 @@ nav {
 
 /* quick list section responsive code end */
 /* main code end */
+.features-container {
+    margin-top: 130px;
+}
+
+.heading-section h2 {
+    font-size: 45px;
+    color: var(--five-text);
+    border-left: 5px solid var(--one-color);
+    padding-left: 20px;
+    margin-bottom: 24px;
+}
+
+.heading-section p {
+    color: var(--three-text);
+    max-width: 587px;
+    margin-bottom: 30px;
+}
+
+.features {
+    display: flex;
+    align-items: center;
+    gap: 54px;
+}
+
+
+.card {
+    max-width: 586px;
+    background-color: white;
+    padding: 30px 42px;
+    box-shadow: 0px 4px 30px #00000010;
+    margin-bottom: 20px;
+}
+
+.card h5 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card p {
+    line-height: 26px;
+    color: var(--three-text);
+}
