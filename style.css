@@ -22,7 +22,8 @@
 .quick-list-container,
 .homebar img,
 .features-container,
-.facts-container {
+.facts-container,
+.sponspors-container {
     max-width: 1420px;
     margin: 0 auto;
 }
@@ -351,6 +352,7 @@ nav {
 /* Facts section code start */
 .facts-container {
     margin-top: 130px;
+    margin-bottom: 180px;
 }
 
 .facts-heading-section h2 {
@@ -386,7 +388,7 @@ nav {
 .facts-card p {
     font-size: 1.25rem;
     font-weight: 600;
-    color: var(--four-text);
+    color: var(--three-text);
 }
 
 .facts {
@@ -397,7 +399,7 @@ nav {
 
 /* Facts section code end */
 
-/* Features section responsive code start */
+/* Facts section responsive code start */
 
 @media screen and (max-width:1040px) {
     .facts {
@@ -428,4 +430,63 @@ nav {
     }
 }
 
-/* Features section responsive code end */
+/* Facts section responsive code end */
+
+/* sponspors section code start */
+.sponspors-heading-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sponspors-heading-section h2 {
+    font-size: 2.81rem;
+    color: var(--five-text);
+    margin-bottom: 24px;
+}
+
+.sponspors-heading-section p {
+    max-width: 540px;
+    line-height: 26px;
+    color: var(--three-text);
+}
+
+.sponspors {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    filter: grayscale(100%);
+    margin-bottom: 130px;
+}
+
+/* sponspors section code end */
+
+/* sponspors section responsive code start */
+@media screen and (max-width:1040px) {
+    .sponspors {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px 0px;
+    }
+}
+
+@media screen and (max-width:890px) {
+    .sponspors {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 0px;
+    }
+}
+
+@media screen and (max-width:532px) {
+    .sponspors {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+/* sponspors section responsive code end */
