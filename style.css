@@ -143,6 +143,10 @@ nav {
         gap: 10px;
     }
 
+    .bar ul li {
+        margin-left: 0px;
+    }
+
 }
 
 /* navigation bar and hero banner section responsive code end */
