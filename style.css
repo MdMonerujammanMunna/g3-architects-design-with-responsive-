@@ -21,7 +21,8 @@
 .homebar,
 .quick-list-container,
 .homebar img,
-.features-container {
+.features-container,
+.facts-container {
     max-width: 1420px;
     margin: 0 auto;
 }
@@ -215,6 +216,7 @@ nav {
 
 /* quick list section responsive code end */
 /* main code end */
+/* Features section code start */
 .features-container {
     margin-top: 130px;
 }
@@ -290,6 +292,9 @@ nav {
     color: white;
 }
 
+/* Features section code end */
+/* Features section responsive code start */
+
 @media screen and (max-width:532px) {
     .features {
         flex-direction: column;
@@ -340,3 +345,87 @@ nav {
     }
 
 }
+
+/* Features section responsive code end */
+
+/* Facts section code start */
+.facts-container {
+    margin-top: 130px;
+}
+
+.facts-heading-section h2 {
+    font-size: 2.81rem;
+    color: var(--five-text);
+    margin-bottom: 24px;
+}
+
+.facts-heading-section p {
+    color: var(--three-text);
+    max-width: 587px;
+    margin-bottom: 100px;
+}
+
+.facts-card {
+    border: 1px solid var(--one-color);
+    padding: 45px 36px;
+    width: 245px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.facts-card img {
+    margin-bottom: 15px;
+}
+
+.facts-card h6 {
+    font-size: 2.81rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.facts-card p {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--four-text);
+}
+
+.facts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+/* Facts section code end */
+
+/* Features section responsive code start */
+
+@media screen and (max-width:1040px) {
+    .facts {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px 0px;
+    }
+}
+
+@media screen and (max-width:890px) {
+    .facts {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 0px;
+    }
+
+    .facts-heading-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:532px) {
+    .facts {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px 0px;
+    }
+}
+
+/* Features section responsive code end */
