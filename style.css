@@ -23,7 +23,8 @@
 .homebar img,
 .features-container,
 .facts-container,
-.sponspors-container {
+.sponspors-container,
+.footer-container {
     max-width: 1420px;
     margin: 0 auto;
 }
@@ -490,3 +491,18 @@ nav {
 }
 
 /* sponspors section responsive code end */
+/* footeer section code start */
+.footer-container {
+    background-color: var(--two-color);
+    border-radius: 8px;
+}
+
+.footer-container p {
+    font-size: 1.25rem;
+    padding: 40px 0;
+    text-align: center;
+    margin-bottom: 230px;
+    color: var(--four-text);
+}
+
+/* footeer section code end */
